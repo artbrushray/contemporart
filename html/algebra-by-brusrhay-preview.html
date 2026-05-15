@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мона Лиза</title>
+
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        /* Стили для галереи картинок */
+        .gallery { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; }
+        .gallery img { max-width: 100%; height: auto; border-radius: 8px; flex: 1 1 300px; object-fit: cover; }
+        .meta { color: #555; font-style: italic; }
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: #0076ff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.back-link:hover {
+    color: #0056b3;
+}
+    </style>
+
+<script src="fancybox.umd.js"></script>
+<link rel="stylesheet" href="fancybox.css" />
+
+</head>
+<body>
+<a href="../index.html" class="back-link">← Назад в галерею</a>
+
+    <h1>Мона Лиза</h1>
+    <p class="meta">Автор: Леонардо да Винчи | Год: 1503</p>
+
+    <!-- Сюда вставятся все картинки проекта -->
+    <div class="gallery">
+        <a href="../images/Algebra-by-brusrhay-preview.jpg" data-fancybox="gallery" data-caption="Мона Лиза"><img src="../images/Algebra-by-brusrhay-preview.jpg" alt="Мона Лиза"></a>
+
+    </div>
+
+    <div class="description">
+        <p>Mestiriouse smile</p>
+        <p>Загадочная улыбка и самый известный шедевр.</p>
+    </div>
+
+
+    <!-- Подключаем JS скрипт Fancybox -->
+<script>
+        // Активируем функцию увеличения для всех элементов с атрибутом data-fancybox
+        Fancybox.bind("[data-fancybox]", {
+            // Здесь можно включить или выключить разные опции, например анимацию
+        });
+    </script>
+</body>
+</html>

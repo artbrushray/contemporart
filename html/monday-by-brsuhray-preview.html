@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Landscape abstraction, abstract expressionism oil painting on mixed canvas, post-digital art. Абстрактный пейзаж, абстрактный экспрессионизм, масляная живопись на смешанном холсте, постцифровое. искусство.">
+    <title>Monday | Понедельник</title>
+
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        /* Стили для галереи картинок */
+        .gallery { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; }
+        .gallery img { max-width: 100%; height: auto; border-radius: 8px; flex: 1 1 300px; object-fit: cover; }
+        .meta { color: #555; font-style: italic; }
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: #0076ff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.back-link:hover {
+    color: #0056b3;
+}
+    </style>
+
+<script src="fancybox.umd.js"></script>
+<link rel="stylesheet" href="fancybox.css" />
+
+</head>
+<body>
+<a href="../index.html" class="back-link">← Back to the gallery | Назад в галерею</a>
+
+    <h1>Monday | Понедельник</h1>
+    <p class="meta">Автор: Dmitry Brushray | Год: 2025</p>
+
+    <!-- Сюда вставятся все картинки проекта -->
+    <div class="gallery">
+        <a href="../images/monday-by-brsuhray-preview.jpg" data-fancybox="gallery" data-caption="Monday | Понедельник"><img src="../images/monday-by-brsuhray-preview.jpg" alt="Monday | Понедельник"></a>
+<a href="../images/dmitry-brushray-monday-by-brushray-s.jpg" data-fancybox="gallery" data-caption="Monday | Понедельник"><img src="../images/dmitry-brushray-monday-by-brushray-s.jpg" alt="Monday | Понедельник"></a>
+
+    </div>
+
+    <div class="description">
+        <p>Landscape abstraction, abstract expressionism oil painting on mixed canvas, post-digital art.</p>
+        <p>Абстрактный пейзаж, абстрактный экспрессионизм, масляная живопись на смешанном холсте, постцифровое. искусство.</p>
+    </div>
+
+
+    <!-- Подключаем JS скрипт Fancybox -->
+<script>
+        // Активируем функцию увеличения для всех элементов с атрибутом data-fancybox
+        Fancybox.bind("[data-fancybox]", {
+            // Здесь можно включить или выключить разные опции, например анимацию
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="I was sceptical about this artwork. It felt too messy. But I decided to give it a chance. Я был настроен скептически, работа ощущалась слишком хаотичной. Но я все же решил дать ей шанс.">
+    <title>Flow | Поток</title>
+
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        /* Стили для галереи картинок */
+        .gallery { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; }
+        .gallery img { max-width: 100%; height: auto; border-radius: 8px; flex: 1 1 300px; object-fit: cover; }
+        .meta { color: #555; font-style: italic; }
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: #0076ff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.back-link:hover {
+    color: #0056b3;
+}
+    </style>
+
+<script src="fancybox.umd.js"></script>
+<link rel="stylesheet" href="fancybox.css" />
+
+</head>
+<body>
+<a href="../index.html" class="back-link">← Back to the gallery | Назад в галерею</a>
+
+    <h1>Flow | Поток</h1>
+    <p class="meta">Автор: Dmitry Brushray | Год: 2026</p>
+
+    <!-- Сюда вставятся все картинки проекта -->
+    <div class="gallery">
+        <a href="../images/stream-preview-by-brushray-1.jpg" data-fancybox="gallery" data-caption="Flow | Поток"><img src="../images/stream-preview-by-brushray-1.jpg" alt="Flow | Поток"></a>
+<a href="../images/stream-by-brushray-2!.jpg" data-fancybox="gallery" data-caption="Flow | Поток"><img src="../images/stream-by-brushray-2!.jpg" alt="Flow | Поток"></a>
+<a href="../images/stream-by-brushray-1!.jpg" data-fancybox="gallery" data-caption="Flow | Поток"><img src="../images/stream-by-brushray-1!.jpg" alt="Flow | Поток"></a>
+
+    </div>
+
+    <div class="description">
+        <p>I was sceptical about this artwork. It felt too messy. But I decided to give it a chance.</p>
+        <p>Я был настроен скептически, работа ощущалась слишком хаотичной. Но я все же решил дать ей шанс.</p>
+    </div>
+
+
+    <!-- Подключаем JS скрипт Fancybox -->
+<script>
+        // Активируем функцию увеличения для всех элементов с атрибутом data-fancybox
+        Fancybox.bind("[data-fancybox]", {
+            // Здесь можно включить или выключить разные опции, например анимацию
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="I keep experimenting with expressive base for oil painting bringing chaotic graphic to calm painting. Продолжение экспериментов с хаотичной, экспрессивной основой для живописи. Превращаю абстрактую, хаотичную, экспрессивную графику в простой и понятный пейзаж.">
+    <title>Cascades | Каскады</title>
+
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        /* Стили для галереи картинок */
+        .gallery { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; }
+        .gallery img { max-width: 100%; height: auto; border-radius: 8px; flex: 1 1 300px; object-fit: cover; }
+        .meta { color: #555; font-style: italic; }
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: #0076ff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.back-link:hover {
+    color: #0056b3;
+}
+    </style>
+
+<script src="fancybox.umd.js"></script>
+<link rel="stylesheet" href="fancybox.css" />
+
+</head>
+<body>
+<a href="../index.html" class="back-link">← Back to the gallery | Назад в галерею</a>
+
+    <h1>Cascades | Каскады</h1>
+    <p class="meta">Автор: Dmitry Brushray | Год: 2026</p>
+
+    <!-- Сюда вставятся все картинки проекта -->
+    <div class="gallery">
+        <a href="../images/cascade-preview-by-brushray-2.jpg" data-fancybox="gallery" data-caption="Cascades | Каскады"><img src="../images/cascade-preview-by-brushray-2.jpg" alt="Cascades | Каскады"></a>
+<a href="../images/cascade-by-brushray-1!.jpg" data-fancybox="gallery" data-caption="Cascades | Каскады"><img src="../images/cascade-by-brushray-1!.jpg" alt="Cascades | Каскады"></a>
+<a href="../images/cascade-by-brushray-2!.jpg" data-fancybox="gallery" data-caption="Cascades | Каскады"><img src="../images/cascade-by-brushray-2!.jpg" alt="Cascades | Каскады"></a>
+<a href="../images/cascades-by-brushray-merged.jpg" data-fancybox="gallery" data-caption="Cascades | Каскады"><img src="../images/cascades-by-brushray-merged.jpg" alt="Cascades | Каскады"></a>
+
+    </div>
+
+    <div class="description">
+        <p>I keep experimenting with expressive base for oil painting bringing chaotic graphic to calm painting.</p>
+        <p>Продолжение экспериментов с хаотичной, экспрессивной основой для живописи. Превращаю абстрактую, хаотичную, экспрессивную графику в простой и понятный пейзаж.</p>
+    </div>
+
+
+    <!-- Подключаем JS скрипт Fancybox -->
+<script>
+        // Активируем функцию увеличения для всех элементов с атрибутом data-fancybox
+        Fancybox.bind("[data-fancybox]", {
+            // Здесь можно включить или выключить разные опции, например анимацию
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Попытки выстроить композицию группируя хаотичные элементы. That's an attempt to build composition by grouping chaotic elments.">
+    <title>Reflection | Отражение</title>
+
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        /* Стили для галереи картинок */
+        .gallery { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; }
+        .gallery img { max-width: 100%; height: auto; border-radius: 8px; flex: 1 1 300px; object-fit: cover; }
+        .meta { color: #555; font-style: italic; }
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: #0076ff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.back-link:hover {
+    color: #0056b3;
+}
+    </style>
+
+<script src="fancybox.umd.js"></script>
+<link rel="stylesheet" href="fancybox.css" />
+
+</head>
+<body>
+<a href="../index.html" class="back-link">← Back to the gallery | Назад в галерею</a>
+
+    <h1>Reflection | Отражение</h1>
+    <p class="meta">Автор: Dmitry Brushrayм | Год: 2026</p>
+
+    <!-- Сюда вставятся все картинки проекта -->
+    <div class="gallery">
+        <a href="../images/reflectionby-brushray-p2.jpg" data-fancybox="gallery" data-caption="Reflection | Отражение"><img src="../images/reflectionby-brushray-p2.jpg" alt="Reflection | Отражение"></a>
+<a href="../images/reflectionby-brushray-1-l!.jpg" data-fancybox="gallery" data-caption="Reflection | Отражение"><img src="../images/reflectionby-brushray-1-l!.jpg" alt="Reflection | Отражение"></a>
+<a href="../images/reflectionby-brushray-2-l!.jpg" data-fancybox="gallery" data-caption="Reflection | Отражение"><img src="../images/reflectionby-brushray-2-l!.jpg" alt="Reflection | Отражение"></a>
+<a href="../images/reflectionby-brushray-merged!.jpg" data-fancybox="gallery" data-caption="Reflection | Отражение"><img src="../images/reflectionby-brushray-merged!.jpg" alt="Reflection | Отражение"></a>
+
+    </div>
+
+    <div class="description">
+        <p>Попытки выстроить композицию группируя хаотичные элементы.</p>
+        <p>That's an attempt to build composition by grouping chaotic elments.</p>
+    </div>
+
+
+    <!-- Подключаем JS скрипт Fancybox -->
+<script>
+        // Активируем функцию увеличения для всех элементов с атрибутом data-fancybox
+        Fancybox.bind("[data-fancybox]", {
+            // Здесь можно включить или выключить разные опции, например анимацию
+        });
+    </script>
+</body>
+</html>
